@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/** default css **/
+:ROOT{
+    --theme-color:#4B2E25;
+    --secondary-color:#B36F36;
+    --bg1:#f0c482;
+    --bg2:#4e4747;
+    --green:#465849;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Gelasio", serif;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.col-1-2{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-1-3{
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+.col-1-4{
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.px-50{
+   padding-left: 50px;
+   padding-right: 50px;
+}
+h2{
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+/** default css **/
+
+/**Nav css **/
+header{
+    background-color:var(--theme-color);
+    padding: 10px 0;
+}
+
+.logo{
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+.nav{
+    flex-basis: 80%;
+    max-width: 80%;
+}
+
+.logo img{
+    filter: brightness(0) invert(1);
+}
+nav ul{
+  list-style: none; 
+  display: flex; 
+  justify-content: flex-end;
+  gap: 20px;
+}
+nav a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    font-weight: 100;
+
+}
+
+/**Nav css **/
+
+/**Hero banner css**/
+.heroBanner{
+    background-image: url(../images/Hero\ Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heroBannerContent{
+flex-basis: 1010px;
+max-width: 1010px;
+padding-top: 190px;
+padding-bottom: 190px;
+text-align: center;
+}
+.heroBannerContent h1{
+color: var(--secondary-color);
+font-size: 40px;
+}
+.heroBannerContent p{
+    font-size: 26PX;
+    color: var(--theme-color);
+    font-family: 100;
+}
+
+
+/**Hero banner css**/
+/** about us **/
+.aboutSection{
+    padding: 50px 0;
+    background-color: var(--bg1);
+}
+.aboutSection h2{
+    color: var(--theme-color);
+}
+.aboutSection p{
+    color: var(--theme-color);
+}
+/**Feature Section**/
+
+.featureSection{
+    padding: 50px 0;
+}
+.feature{
+    border: 0.5px solid var(--bg2);
+    padding:  15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    height: 100%;
+}
+.feature p{
+margin-bottom: 0;
+}
+.feature img{
+
+}
+.featureSection .col-1-3,
+.featureSection .col-1-4{
+  padding: 15px;
+}
+/**SectionReVARCE**/
+.SectionReVARCE{
+background-color: var(--green);
+padding: 60px 0;
+}
+.SectionReVARCE h2 ,
+.SectionReVARCE p{
+    color: #fff;
+}
+/**SectionReVARCE**/
+
+/**imgtextsection**/
+.imgtextsection{
+    padding: 100px 0;
+}
+
+.imgtextcontent{
+    max-width: 633px;
+    margin: o auto;
+}
+.imgtextcontent h3{
+    color: var(--theme-color);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.imgtextcontent p{ color: var(--theme-color);}
+
+.imgtextsection img{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.imgtextsection.reverse img{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.imgtextsection{
+    padding: 100px 0;
+}
+
+.imgtextcontent{
+    max-width: 633px;
+   margin: 0 auto;
+}
+
+
+/**imgtextsection**/
+
+/**textSectioOne**/
+.textSectioOne{
+    background-color: var(--bg1);
+    padding-top: 100px;
+    padding-bottom: 300px;
+
+}
+.textSectioTwo{
+    background-color: var(--green);
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+.textSectioOne,.textSectioTwo{
+    
+    padding: 100px o;
+    text-align: center;
+}
+/**offer**/
+.offer{
+    background-image: url(../images/Craciunul\ Pentru\ Toti.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: -250px;
+    margin-top: -250px;
+    position: relative;
+}
+.offercontent{
+color: #fff;
+max-width: 800px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.offercontent h2{}
+.offercontent p{}
+.offercontent strong{}
+.offercontent a{
+    padding: 10px 25px;
+    background: #fff;margin-top: 20px;
+    border-radius: 30px;
+    color: var(--green);
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+}
+.offercontent a:hover{
+    background-color: var(--bg2);
+    color: #fff;
+}
